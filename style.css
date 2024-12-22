@@ -13,6 +13,17 @@ html,body{
 
 /* #0B0B0B */
 
+#crsr{
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.797);
+  position: fixed;
+  z-index: 999;
+  mix-blend-mode: difference;
+  transform: translate(-50%,-50%);
+}
+
 #loader{
   width: 100%;
   height: 100%;
@@ -106,4 +117,60 @@ html,body{
   background-color: #151515;
   width: 100%;
   height: 100vh;
+}
+
+#page1 #nav-part1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw 5.5vw;
+}
+
+#nav-part2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+
+.hero{
+  width: 72%;
+  margin-left: 27%;
+  height: fit-content;
+  overflow: hidden;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+}
+
+#nav-part2 h4{
+  font-size: 0.9vw;
+}
+.hero:nth-child(2){
+  margin-top: 15vh;
+}
+
+.hero h1{
+  font-size: 7.2vw;
+  line-height: 7.2vw;
+  text-transform: uppercase;
+
+}
+
+.hero h2{
+  font-size: 7.2vw;
+  line-height: 7.2vw;
+  text-transform: uppercase;
+}
+.hero h3{
+  font-size: 7.2vw;
+  line-height: 7.2vw;
+  text-transform: uppercase;
+}
+
+.hero h2:hover{
+  -webkit-text-stroke: 2px white;
+  color: transparent;
 }
